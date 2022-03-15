@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khu nhà nghỉ dưỡng</title>
+    <link rel="stylesheet" href="./assets/css/Main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/Base.css">
+    <link rel="stylesheet" href="./assets/css/Responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid">
+                <img src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-anh-nen-4k-game-lol-tuong-yone.jpg" alt="image place" class="img hide-on-mobile hide-on-tablet">
+                <img src="./assets/Img/hinh-anh-nen-4k-game-lol-tuong-yone-tablet.png" alt="image place" class="img-tablet">
+                <img src="./assets/Img/hinh-anh-nen-4k-game-lol-tuong-yone-mobile.jpg" alt="image place" class="img-mobile">
+                <a href="#" class="header__logo hide-on-tablet-pro hide-on-mobile-tablet">
+                    <img src="./assets/Img/HOME CHILL.png" alt="logo" class="header__logo-img ">
+                </a>
+                <a href="#" class="header__logo-tablet ">
+                    <img src="./assets/Img/HOMECHILL-simple.png" alt="logo" class="header__logo-img">
+                </a>
+                <!-- Header Navbar -->
+                <nav class="header__navbar hide-on-mobile">
+                    <ul class="header__navbar-option-list">
+                        <li class="header__navbar-option-items header__navbar-option-items-selected">
+                            <a href="#" class="header__navbar-option-link option-1 ">Nơi ở</a>
+                            <div class="header__navbar-option-line"></div>
+                        </li>
+                        <li class="header__navbar-option-items ">
+                            <a href="#" class="header__navbar-option-link option-2">Trải nghiệm</a>
+                            <div class="header__navbar-option-line"></div>
+                        </li>
+                        <li class="header__navbar-option-items ">
+                            <a href="phim1080z.com" class="header__navbar-option-link option-3">Trải nghiệm trực tuyến</a>
+                            <div class="header__navbar-option-line"></div>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-user-list">
+                        <li class="header__navbar-user-items">
+                            <a href="#" class="header__navbar-user-link">Trở thành chủ nhà</a>
+                        </li>
+                        <li class="header__navbar-user-items">
+                            <div class="header__navbar-user-lang">
+                                <i class="header__navbar-user-lang-icon fas fa-globe"></i>
+                            </div>
+                        </li>
+                        <li class="header__navbar-user-items">
+                            <button class="header__navbar-user-bar">
+                                <i class="header__navbar-user-bar-icon fas fa-bars"></i>
+                                <img src="https://lh3.googleusercontent.com/ogw/ADea4I4MY5f7uxKoLHEyaJAypNlefl-mauJYpkKQP3ee=s83-c-mo" alt="User img" class="header__navbar-user-img">
+                                <ul class="header__navbar-user-bar-list">
+                                    <li class="header__navbar-user-bar-item user-register">
+                                        Đăng ký 
+                                    </li>
+                                    <li class="header__navbar-user-bar-item user-login">
+                                        Đăng nhập
+                                    </li>
+                                    <li class="header__navbar-user-bar-item">
+                                        <a href="#" class="header__navbar-user-bar-link">Cho thuê nhà</a>
+                                    </li>
+                                    <li class="header__navbar-user-bar-item">
+                                        <a href="#" class="header__navbar-user-bar-link">Tổ chức trải nghiệm</a>
+                                    </li>
+                                    <li class="header__navbar-user-bar-item">
+                                        <a href="#" class="header__navbar-user-bar-link">Trợ giúp</a>
+                                    </li>
+                                </ul>
+                            </button>
+
+                            
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="header__navbar-scroll">
+                    <a href="#" class="header__logo header__logo-scroll hide-on-mobile-tablet">
+                        <img src="./assets/Img/HOMECHILL-simple-scroll.png" alt="logo" class="header__logo-img ">
+                    </a>
+
+                    <div class="header__search-scroll hide-on-mobile">
+                        <p class="header__search-scroll-text">Bắt đầu tìm kiếm</p>
+                        <button class="header__search-button header__search-button-scroll">
+                            <i class="header__search-button-icon header__search-button-icon-scroll  fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- Header search mobile scroll -->
+                    <div class="header__search-mobile header__search-mobile-scroll">
+                        <i class="header__search-mobile-icon fas fa-search"></i>
+                        <p class="header__search-mobile-text">Bạn sắp đi đâu?</p>
+                    </div>
+
+                    <ul class="header__navbar-user-list header__navbar-user-list-scroll hide-on-mobile">
+                        <li class="header__navbar-user-items">
+                            <a href="#" class="header__navbar-user-link header__navbar-user-link-scroll">Trở thành chủ nhà</a>
+                        </li>
+                        <li class="header__navbar-user-items">
+                            <div class="header__navbar-user-lang header__navbar-user-lang-scroll">
+                                <i class="header__navbar-user-lang-icon  fas fa-globe"></i>
+                            </div>
+                        </li>
+                        <li class="header__navbar-user-items">
+                            <button class="header__navbar-user-bar header__navbar-user-bar-scroll">
+                                <i class="header__navbar-user-bar-icon fas fa-bars"></i>
+                                <img src="https://lh3.googleusercontent.com/ogw/ADea4I4MY5f7uxKoLHEyaJAypNlefl-mauJYpkKQP3ee=s83-c-mo" alt="User img" class="header__navbar-user-img">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Header Search -->
+                <div class="header__search">
+                    <!-- Header search Nơi ở -->
+                    
+                    <ul class="header__search-list option-1 hide-on-mobile">
+                        
+                        <button class="header__search-items header__search-place-option ">
+                            <h4 class="header__search-heading">Địa điểm</h4>
+                            <input class="header__search-request header__search-request-input" placeholder="Bạn sắp đi đâu?"> 
+                        </button>
+
+                        <button class="header__search-items header__search-receive-option ">
+                            <h4 class="header__search-heading">Nhận phòng</h4>
+                            <p class="header__search-request">Thêm ngày</p>
+                        </button>
+
+                        <button class="header__search-items header__search-check-option">
+                            <h4 class="header__search-heading">Trả phòng</h4>
+                            <p class="header__search-request">Thêm ngày</p>
+                        </button>
+
+                        <button class="header__search-items header__search-customer-option">
+                            <h4 class="header__search-heading">Khách</h4>
+                            <p class="header__search-request">Thêm khách</p>
+
+                            <button class="header__search-button header__search-button-main">
+                                <i class="header__search-button-icon fas fa-search"></i>
+                                <span class="header__search-button-text">Tìm kiếm</span>
+                            </button>
+                        </button>
+
+
+
+                        <!-- Header search choice -->
+                        <!-- Header search choice place -->
+                        <div class="header__search-place header__search-choice">
+                            <h4 class="header__search-place-heading">Mọi lúc, mọi nơi</h4>
+                            <div class="header__search-place-choice">
+                                <p class="header__search-place-text">Tìm kiếm linh hoạt </p>
+                                <i class="header__search-place-icon fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Header search choice receive -->
+                        <div class="header__search-check header__search-receive header__search-choice">
+                            <div class="header__search-check-heading">
+                                <p class="header__search-check-heading-text header__search-check-heading-text--non">Lịch</p>
+                                <p class="header__search-check-heading-text header__search-check-heading-text--selected">Ngày linh hoạt</p>
+                            </div>
+                            <!-- Ngày linh hoạt -->
+                            <div class="header__search-check-title">Bạn muốn ở trong bao lâu?</div>
+                            <div class="header__search-check-item">
+                                <div class="header__search-check-time-in header__search-check-time-in--selected">Cuối tuần</div>
+                                <div class="header__search-check-time-in">1 tuần</div>
+                                <div class="header__search-check-time-in">1 tháng</div>
+                            </div>
+
+                            <div class="header__search-check-title">Bạn muốn đi khi nào?</div>
+                            <div class="header__search-check-item">
+                                <div class="header__search-check-start header__search-check-start--selected">
+                                    <i class="header__search-check-icon far fa-calendar-check"></i>
+                                    <div class="header__search-check-start-text">Tháng 10</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 11</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 12</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 1</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 2</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 3</div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Header search choice check -->
+                        <div class="header__search-check header__search-give header__search-choice">
+                            <div class="header__search-check-heading">
+                                <p class="header__search-check-heading-text header__search-check-heading-text--non">Lịch</p>
+                                <p class="header__search-check-heading-text header__search-check-heading-text--selected">Ngày linh hoạt</p>
+                            </div>
+                            <!-- Ngày linh hoạt -->
+                            <div class="header__search-check-title">Bạn muốn ở trong bao lâu?</div>
+                            <div class="header__search-check-item">
+                                <div class="header__search-check-time-in header__search-check-time-in--selected">Cuối tuần</div>
+                                <div class="header__search-check-time-in">1 tuần</div>
+                                <div class="header__search-check-time-in">1 tháng</div>
+                            </div>
+
+                            <div class="header__search-check-title">Bạn muốn đi khi nào?</div>
+                            <div class="header__search-check-item">
+                                <div class="header__search-check-start header__search-check-start--selected">
+                                    <i class="header__search-check-icon far fa-calendar-check"></i>
+                                    <div class="header__search-check-start-text">Tháng 10</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 11</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 12</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 1</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 2</div>
+                                </div>
+                                <div class="header__search-check-start">
+                                    <i class="header__search-check-icon far fa-calendar"></i>
+                                    <div class="header__search-check-start-text">Tháng 3</div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Header search customer choice -->
+                        <div class="header__search-choice header__search-customer">
+                            <div class="header__search-customer-item">
+                                <div class="header__search-customer-text">
+                                    <h6 class="header__search-customer-heading">Người lớn</h6>
+                                    <p class="header__search-customer-description">Từ 13 tuổi trở lên</p>
+                                </div>
+                                
+                                <div class="header__search-customer-pick">
+                                    <i class="header__search-customer-icon header__search-customer-icon--disable fas fa-minus"></i>
+                                    <div class="header__search-customer-times">0</div>
+                                    <i class="header__search-customer-icon header__search-customer-icon--enable fas fa-plus"></i>
+                                </div>
+                             
+                            </div>
+                            <div class="header__search-customer-item">
+                                <div class="header__search-customer-text">
+                                    <h6 class="header__search-customer-heading">Trẻ em</h6>
+                                    <p class="header__search-customer-description">Độ tuổi 2 - 12</p>
+                                </div>
+                                
+                                <div class="header__search-customer-pick">
+                                    <i class="header__search-customer-icon header__search-customer-icon--disable fas fa-minus"></i>
+                                    <div class="header__search-customer-times">0</div>
+                                    <i class="header__search-customer-icon header__search-customer-icon--enable fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="header__search-customer-item">
+                                <div class="header__search-customer-text">
+                                    <h6 class="header__search-customer-heading">Em bé</h6>
+                                    <p class="header__search-customer-description">Dưới 2 tuổi</p>
+                                </div>
+                                
+                                <div class="header__search-customer-pick">
+                                    <i class="header__search-customer-icon header__search-customer-icon--disable fas fa-minus"></i>
+                                    <div class="header__search-customer-times">0</div>
+                                    <i class="header__search-customer-icon header__search-customer-icon--enable fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <!-- Header search trải nghiệm -->
+                    <ul class="header__search-list option-2 header__search-list-2">
+                        <li class="header__search-items">
+                            <h4 class="header__search-heading">Địa điểm</h4>
+                            <p class="header__search-request">Bạn sắp đi đâu?</p>
+                        </li>
+                        <li class="header__search-items">
+                            <h4 class="header__search-heading">Ngày</h4>
+                            <p class="header__search-request">Thêm thời gian bạn muốn tham gia</p>
+                        </li>
+                        <button class="header__search-button">
+                            <i class="header__search-button-icon fas fa-search"></i>
+                        </button>
+                    </ul>
+
+                     <!-- Header search mobile  -->
+                    <div class="header__search-mobile">
+                        <i class="header__search-mobile-icon fas fa-search"></i>
+                        <p class="header__search-mobile-text">Bạn sắp đi đâu?</p>
+                    </div>
+
+                    <div class="header__search-general">
+                        <h4 class="header__search-general-heading">Bạn chưa biết đi đâu? Tuyệt!</h4>
+                        <div class="header__search-general-text">
+                            <a class="header__search-general-link">Tìm kiếm linh hoạt </a>
+                        </div>
+                    </div>
+
+                    <!-- Header search bar mobile -->
+                    <div class="header__search-bar">
+                        <i class="header__search-bar-back fas fa-angle-left"></i>
+                        <input class="header__search-request header__search-request-input header__search-bar-input" placeholder="Bạn sắp đi đâu?">
+                        <h4 class="header__search-place-heading header__search-bar-heading">Mọi lúc, mọi nơi</h4>
+                        <div class="header__search-place-choice header__search-bar-choice">
+                            <p class="header__search-place-text header__search-bar-text">Tìm kiếm linh hoạt </p>
+                            <i class="header__search-place-icon header__search-bar-icon fas fa-chevron-right"></i>
+                        </div>
+
+                        <ul class="header__search-bar-list">
+                            <li class="header__search-bar-list-item">
+                                <i class="header__search-bar-list-icon fas fa-map-marker-alt"></i>
+                                <p class="header__search-bar-list-text">Tên khu vực blablablablablablablablablabla</p>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                    </div>
+                </div>
+        </div>
+
+        <div class="main__container">
+            <div class="grid wide">
+                <!-- Nearly places-->
+                <h2 class="content__heading">Khám phá những điểm đến gần đây</h2>
+                <div class="nearly row hide-on-mobile">
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Thành phố Hội An</div>
+                                <div class="nearly__time">3 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Thành phố Ninh Bình</div>
+                                <div class="nearly__time">6.5 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/52e8083e-2de2-446d-a860-534eab250541.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Hải Phòng</div>
+                                <div class="nearly__time">8 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/20e74de0-0eb8-4fca-afb8-b111875acdf5.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Thành phố Tuy Hòa</div>
+                                <div class="nearly__time">8 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/e639b7ab-aee3-48ee-9743-216684a51319.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Thành phố Đồng Hới</div>
+                                <div class="nearly__time">1.5 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/ca3737ef-0faf-46ba-b055-b4a2d99e2cea.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Thành phố Buôn Ma Thuột</div>
+                                <div class="nearly__time">8 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/105b8160-1109-4678-b8aa-367ea9faebea.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Thành phố Pleiku</div>
+                                <div class="nearly__time">8 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="nearly__place">
+                            <img src="https://a0.muscache.com/im/pictures/585d1e53-e2e1-4baf-a34e-36301dd1e2da.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                            <div class="nearly__descrip">
+                                <div class="nearly__name">Thành phố Vinh</div>
+                                <div class="nearly__time">4 giờ lái xe</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nearly__mobile">
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Thành phố Hội An</div>
+                            <div class="nearly__time">3 giờ lái xe</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Thành phố Ninh Bình</div>
+                            <div class="nearly__time">6.5 giờ lái xe</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/52e8083e-2de2-446d-a860-534eab250541.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Hải Phòng</div>
+                            <div class="nearly__time">8 giờ lái xe</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/20e74de0-0eb8-4fca-afb8-b111875acdf5.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Thành phố Tuy Hòa</div>
+                            <div class="nearly__time">8 giờ lái xe</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/e639b7ab-aee3-48ee-9743-216684a51319.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Thành phố Đồng Hới</div>
+                            <div class="nearly__time">1.5 giờ lái xe</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/ca3737ef-0faf-46ba-b055-b4a2d99e2cea.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Thành phố Buôn Ma Thuột</div>
+                            <div class="nearly__time">8 giờ lái xe</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/105b8160-1109-4678-b8aa-367ea9faebea.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Thành phố Pleiku</div>
+                            <div class="nearly__time">8 giờ lái xe</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nearly__place">
+                        <img src="https://a0.muscache.com/im/pictures/585d1e53-e2e1-4baf-a34e-36301dd1e2da.jpg?im_q=medq&im_w=240" alt="image place" class="nearly__img">
+                        <div class="nearly__descrip">
+                            <div class="nearly__name">Thành phố Vinh</div>
+                            <div class="nearly__time">4 giờ lái xe</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Everywhere -->
+                <h2 class="content__heading">Ở bất cứ đâu</h2>
+                <div class="everywhere row hide-on-mobile">
+                    <div class="col l-3 m-4">
+                        <a href="#" class="everywhere__choice">
+                            <img src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Nơi nghĩ dưỡng ngoài trời</p>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="everywhere__choice">
+                            <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Chỗ ở độc đáo</p>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="everywhere__choice">
+                            <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Toàn bộ nhà</p>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <a href="#" class="everywhere__choice">
+                            <img src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Cho phép mang theo thú cưng</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="everywhere__mobile">
+                        <a href="#" class="everywhere__choice everywhere__choice-mobile">
+                            <img src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Nơi nghĩ dưỡng ngoài trời</p>
+                        </a>
+                        <a href="#" class="everywhere__choice everywhere__choice-mobile">
+                            <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Chỗ ở độc đáo</p>
+                        </a>
+                        <a href="#" class="everywhere__choice everywhere__choice-mobile">
+                            <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Toàn bộ nhà</p>
+                        </a>
+                        <a href="#" class="everywhere__choice everywhere__choice-mobile">
+                            <img src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=480" alt="Everywhere image" class="everywhere__img">
+                            <p class="everywhere__text">Cho phép mang theo thú cưng</p>
+                        </a>
+                </div>
+
+                <!-- Board -->
+                <div class="board row">
+                    <div class="col l-12 m-12 c-12">
+                        <img src="https://a0.muscache.com/im/pictures/2595054e-d1d9-4fde-8046-58d51fcb3164.jpg?im_w=1440" alt="Board image" class="board__img">
+                        <div class="board__info">
+                            <h1 class="board__heading">Thử đón tiếp khách</h1>
+                            <p class="board__descrip">Kiếm thêm thu nhập và khám phá các cơ hội mới bằng cách chia sẻ nơi ở của bạn</p>
+                            <a href="#" class="board__link">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suggest -->
+                <h2 class="content__heading content__heading-suggest">Khám phá những điều nên trải nghiệm</h2>
+                <div class="suggest row hide-on-mobile">
+                    <div class="col l-4 m-4">
+                        <a href="#" class="suggest__choice">
+                            <img src="https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=480" alt="suggest image" class="suggest__img">
+                            <div class="suggest__info">
+                                <h3 class="suggest__heading">Trải nghiệm</h3>
+                                <p class="suggest__descrip">Tìm các hoạt động khó quên gần bạn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-4">
+                        <a href="#" class="suggest__choice">
+                            <img src="https://a0.muscache.com/im/pictures/0ce799cb-7553-4369-be9e-d0011e0ef636.jpg?im_w=480" alt="suggest image" class="suggest__img">
+                            <div class="suggest__info">
+                                <h3 class="suggest__heading">Trải nghiệm trực tuyến</h3>
+                                <p class="suggest__descrip">Các hoạt động tương tác, truyền trực tiếp dưới sự dẫn dắt của người tổ chức</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-4">
+                        <a href="#" class="suggest__choice">
+                            <img src="https://a0.muscache.com/im/pictures/247a1ea3-946d-4eb8-a6ab-e8b9a66846f4.jpg?im_w=480" alt="suggest image" class="suggest__img">
+                            <div class="suggest__info">
+                                <h3 class="suggest__heading">Bộ sưu tập nổi bật: Phiêu du</h3>
+                                <p class="suggest__descrip">Du lịch tại nhà với trải nghiệm trực tuyến</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="suggest__mobile">
+                        <a href="#" class="suggest__choice suggest__mobile-choice">
+                            <img src="https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=480" alt="suggest image" class="suggest__img suggest__img-mobile">
+                            <div class="suggest__info">
+                                <h3 class="suggest__heading">Trải nghiệm</h3>
+                                <p class="suggest__descrip">Tìm các hoạt động khó quên gần bạn</p>
+                            </div>
+                        </a>
+                        <a href="#" class="suggest__choice suggest__mobile-choice">
+                            <img src="https://a0.muscache.com/im/pictures/0ce799cb-7553-4369-be9e-d0011e0ef636.jpg?im_w=480" alt="suggest image" class="suggest__img suggest__img-mobile">
+                            <div class="suggest__info">
+                                <h3 class="suggest__heading">Trải nghiệm trực tuyến</h3>
+                                <p class="suggest__descrip">Các hoạt động tương tác, truyền trực tiếp dưới sự dẫn dắt của người tổ chức</p>
+                            </div>
+                        </a>
+                        <a href="#" class="suggest__choice suggest__mobile-choice">
+                            <img src="https://a0.muscache.com/im/pictures/247a1ea3-946d-4eb8-a6ab-e8b9a66846f4.jpg?im_w=480" alt="suggest image" class="suggest__img suggest__img-mobile">
+                            <div class="suggest__info">
+                                <h3 class="suggest__heading">Bộ sưu tập nổi bật: Phiêu du</h3>
+                                <p class="suggest__descrip">Du lịch tại nhà với trải nghiệm trực tuyến</p>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid wide">
+                <div class="footer__info row">
+                    <div class="footer__col col l-3 m-6 c-12">
+                        <ul class="footer__list intro">
+                            <h5 class="footer__heading">Giới thiệu</h5>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Phương thức hoạt động của Home chill
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Trang tin tức
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Home chill 2021
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Nhà đầu tư
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Home chill plus
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Home chill luxe
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    HotelTonight
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Home chill for work
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Nhờ có Host, mọi điều đều có thể
+                                </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">  
+                                Cơ hội nghè nghiệp 
+                            </a> 
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Thư của nhà sáng lập
+                                </a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col col l-3 m-6 c-12">
+                        <ul class=" footer__list community">
+                            <h5 class="footer__heading">Cộng đồng</h5>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Sự đa dạng và cảm giác thân thuộc</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Tiện nghi phù hợp với người có nhu cầu đặc biệt</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Đối tác liên kết Home chill</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Đón tiếp người tị nạn</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Lượt giới thiệu của khách</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    HomeChill.org</li>
+                                </a> 
+                        </ul>
+                    </div>
+                    <div class="footer__col col l-3 m-6 c-12">
+                        <ul class="footer__list welcome">
+                            <h5 class="footer__heading">Đón tiếp khách</h5>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Cho thuê nhà</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Tổ chức trải nghiệm trực tuyến</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Tổ chức trải nghiệm</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Đón tiếp khách có trách nhiệm</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Trung tâm tài nguyên</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Trung tâm cộng đồng</li>
+                                </a> 
+                        </ul>
+                    </div>
+                    <div class="footer__col col l-3 m-6 c-12">
+                        <ul class=" footer__list help">
+                            <h5 class="footer__heading">Hỗ trợ</h5>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Trung tâm trợ giúp</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Các tùy chọn hủy</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Hỗ trợ khu dân cư</li>
+                                </a> 
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    Tin cậy và an toàn</li>
+                                </a> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__last">
+                    <div class="footer__about">
+                        <span class="footer__about-text">© 2021 Home chill, Inc.</span>
+                        <a href="#" class="footer__about-link">Quyền riêng tư</a>
+                        <a href="#" class="footer__about-link">Điều khoản</a>
+                        <a href="#" class="footer__about-link">Sơ đồ trang web</a>
+                    </div>
+
+                    <div class="footer__another">
+                        <a href="#" class="footer__another-link">
+                            <i class="footer__another-icon fas fa-globe"></i>
+                            Tiếng việt
+                        </a>
+                        <a href="#" class="footer__another-link">
+                            <i class="footer__another-icon fas fa-dollar-sign"></i>
+                            USD
+                        </a>
+                    </div>
+
+                    <div class="footer__contact">
+                        <a href="#" class="footer__contact-link">
+                            <i class="footer__contact-icon fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__contact-link">
+                            <i class="footer__contact-icon fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__contact-link">
+                            <i class="footer__contact-icon fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__content">
+                <div class="modal__header">
+                    <div class="modal__close">
+                        <i class="modal__close-icon fas fa-times"></i>
+                    </div>
+                    <h4 class="modal__header-heading">Đăng nhập hoặc đăng ký</h4>
+                </div>
+                
+                <div class="modal__body">
+                    <div class="modal__body-heading">Chào mừng bạn đến với Home chill</div>
+                    <div class="modal__phone-number-input">
+                        <div class="modal__nation">
+                            <p class="modal__nation-title">Quốc gia/Khu vực</p>
+                            <p class="modal__nation-name">Hoa kỳ (+1)</p>
+                            <i class="modal__nation-icon fas fa-chevron-down"></i>
+                        </div>
+                        <input type="number" class="modal__input" placeholder="Số điện thoại">
+                    </div>
+                    <div class="modal__email-input">
+                        <input type="text" class="modal__input" placeholder="Email">
+                    </div>
+                    <div class="modal__policy">
+                        <p class="modal__policy-text">Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại.
+                             Có áp dụng phí dữ liệu và phí tin nhắn tiêu chuẩn.
+                             <a href="#" class="modal__policy-link">Chính sách về quyền riêng tư</a>
+                        </p>
+                        
+                    </div>
+                    <button class="modal__button">Tiếp tục</button>
+                    <div class="modal__separator">hoặc</div>
+                    <ul class="modal__another-choice-list">
+                        <li class="modal__anther-choice-item">
+                            <i class="modal__anther-choice-icon fab fa-facebook"></i>
+                            <p class="modal__anther-choice-text">Tiếp tục với Facebook</p>
+                        </li>
+                        <li class="modal__anther-choice-item">
+                            <img src="./assets/Img/Google__G__Logo.svg.png" alt="logo google" class="modal__anther-choice-icon modal__anther-choice-icon-google">
+                            <p class="modal__anther-choice-text">Tiếp tục với Google</p>
+                        </li>
+                        <li class="modal__anther-choice-item">
+                            <i class="modal__anther-choice-icon fab fa-apple"></i>
+                            <p class="modal__anther-choice-text">Tiếp tục với Apple</p>
+                        </li>
+                        <li class="modal__anther-choice-item modal__anther-choice-item--Phone">
+                            <i class="modal__anther-choice-icon far fa-envelope"></i>
+                            <p class="modal__anther-choice-text">Tiếp tục bằng Email</p>
+                        </li>
+                        <li class="modal__anther-choice-item modal__anther-choice-item--Email">
+                            <i class="modal__anther-choice-icon fas fa-mobile-alt"></i>
+                            <p class="modal__anther-choice-text">Tiếp tục bằng điện thoại</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+:root {
+    --text-color: rgb(37, 37, 37);
+    --black-color: #000;
+    --white-color: #fff;
+    --border-color: #bbbbbb;
+    --element-pseudo-color: #e1e1e1;
+}
+
+* {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+}
+
+
+.header {
+    width: 100%;
+    box-sizing:border-box;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: padding-box;
+    position: relative;
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    max-height: 90vh;
+}
+
+.img-tablet {
+    position: relative;
+    width: 100%;
+    display: none;
+    max-height: 90vh;
+}
+
+.img-mobile {
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+
+/* Main container */
+
+.main__container {
+    position: relative;
+    top: 12px;
+    margin-left: 4px;
+}
+
+.row {
+    margin-bottom: 48px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 22;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: fadeIn;
+    animation: fadeIn ease-in 0.3s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}

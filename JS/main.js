@@ -123,11 +123,10 @@ const scrollHandle = {
             }
             else {
                 headerNavbarScroll.style.display = 'none';
-                if (window.screen.width > 739) {
+                if (window.screen.width > 740) {
                     headerOptionListElement.style.display = 'flex';
                     headerSearchElements[0].style.display = 'flex';
                 }
-
                 headerUserBarList.classList.remove(navbarUserListScrollClass);
 
 

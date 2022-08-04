@@ -61,13 +61,14 @@ const handleUser = {
 
         function handleShowUserBarList() {
             if (!checkShow) {
-                headerUserBarList.style.display = 'block';
+                headerUserBarList.classList.add('showed');
                 checkShow = true;
             }
             else {
-                headerUserBarList.style.display = 'none';
+                headerUserBarList.classList.remove('showed');
                 checkShow = false;
             }
+
         }
 
         for (let headerUserBar of headerUserBars ) {
@@ -77,31 +78,29 @@ const handleUser = {
             }
 
             headerUserBars[0].onblur = () => {
-                headerUserBarList.style.display = 'none';
+                headerUserBarList.classList.remove('showed');
                 checkShow = false;
             }
 
         }
 
-        headerUserBars[1].onblur = () => {
-            headerUserBarList.style.display = 'none';
-            checkShow = false;
-        }
 
-        html.onkeyup = (e) => {
+
+
+        window.addEventListener('keyup', (e) => {
             if (e.keyCode === 27) {
-                headerUserBarList.style.display = 'none';
+                headerUserBarList.classList.remove('showed');
                 checkShow = false;
             }
-        } 
+        } )
 
 
 
     },
     userRegister() {
-        userRegisterElement.onclick = () => {
+        userRegisterElement.addEventListener('click',  () => {
             modal.style.display = 'flex';
-        }
+        } )
 
         modalOverlay.onclick = () => {
             modal.style.display = 'none';
@@ -237,8 +236,6 @@ const searchHandle = {
                 this.checkPlace = false;
                 headerSearchPlaceOptionElement.classList.remove(selectedSearchItemClass);
             }
-
-            
         })
 
 

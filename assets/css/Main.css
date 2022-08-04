@@ -169,6 +169,10 @@
     display: none;
 }
 
+.header__navbar-user-bar-list.showed {
+    display: block;
+}
+
 .header__navbar-user-bar-list::before {
     content: "";
     width: 100%;

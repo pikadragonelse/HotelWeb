@@ -333,18 +333,6 @@ const searchHandle = {
             this.buttonSearchHandle();
         }
     },
-    buttonSearchHandle() {
-        if (!this.checkSearchButton) {
-            headerSearchButtonTextElement.style.display = 'block';
-            headerSearchButtonMainElement.classList.add(activeButtonClass);
-            this.checkSearchButton = true;
-        }
-        else {
-            headerSearchButtonTextElement.style.display = 'none';
-            headerSearchButtonMainElement.classList.remove(activeButtonClass);
-            this.checkSearchButton = false;
-        }
-    },
 
 }
 

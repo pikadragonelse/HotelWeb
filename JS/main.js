@@ -210,7 +210,7 @@ const searchHandle = {
 
                 headerSearchCustomerElement.style.display = 'none';
                 this.checkCustomer = false;
-                this.buttonSearchHandle();
+                
 
             }
             else {
@@ -225,7 +225,7 @@ const searchHandle = {
             headerSearchPlaceElement.style.display = 'none';
             this.checkPlace = false;
             headerSearchPlaceOptionElement.classList.remove(selectedSearchItemClass);
-            this.buttonSearchHandle();
+            
 
         }
     },
@@ -247,7 +247,6 @@ const searchHandle = {
 
                 headerSearchCustomerElement.style.display = 'none';
                 this.checkCustomer = false;
-                this.buttonSearchHandle();
 
             }
             else {
@@ -260,7 +259,6 @@ const searchHandle = {
             headerSearchReceiveElement.style.display = 'none';
             this.checkReceive = false;
             headerSearchReceiveOptionElement.classList.remove(selectedSearchItemClass);
-            this.buttonSearchHandle();
         }
 
         headerSearchCheckOptionElement.onclick = () => {
@@ -279,7 +277,7 @@ const searchHandle = {
 
                 headerSearchCustomerElement.style.display = 'none';
                 this.checkCustomer = false;
-                this.buttonSearchHandle();
+                
             }
             else {
                 headerSearchCheckElement.style.display = 'none';
@@ -292,7 +290,7 @@ const searchHandle = {
             headerSearchCheckElement.style.display = 'none';
             this.checkCheck = false;
             headerSearchCheckOptionElement.classList.remove(selectedSearchItemClass);
-            this.buttonSearchHandle();
+            
 
         }
 
@@ -315,7 +313,7 @@ const searchHandle = {
 
                 headerSearchPlaceElement.style.display = 'none';
                 this.checkPlace = false;
-                this.buttonSearchHandle();
+                
 
             }
             else {
@@ -330,7 +328,7 @@ const searchHandle = {
             this.checkCustomer = false;
 
             headerSearchCustomerOptionElement.classList.remove(selectedSearchItemClass);
-            this.buttonSearchHandle();
+            
         }
     },
 
